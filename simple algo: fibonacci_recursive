@@ -1,0 +1,13 @@
+#include <stdio.h>   //recursive fibonacci
+int fibonacci_recursive(int n){
+if (n<=1) return n;   //f=1;f=0
+return fibonacci_recursive (n-1) + fibonacci_recursive (n-2);
+}
+int main (){
+    int n;
+printf("enter the position(n):");
+scanf("%d",&n);
+
+printf("the %dth fibonacci number is %d/n",n,fibonacci_recursive(n));
+return 0;
+}
